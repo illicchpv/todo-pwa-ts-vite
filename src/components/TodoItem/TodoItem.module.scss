@@ -1,0 +1,59 @@
+.listItem{
+  margin: 0;
+  padding: 0;
+  // background-color: bisque;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 5px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid lightcoral;
+
+  position: relative;
+}
+
+.listItem input{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 30px;
+  height: 32px;
+}
+
+.index{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40px;
+}
+
+.del{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 30px;
+  cursor: pointer;
+  font-size: 32px;
+  color: red;
+}
+.del::after{
+  content: 'удалить';
+  font-size: .5em;
+  position: absolute;
+  bottom: -0.6em;
+  left: 7em;
+  color: red;
+  background-color: lightblue;
+  padding: 3px 7px;
+  border-radius: 7px;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.del:hover::after{
+  opacity: 1;
+}
+
+.completed{
+  color: lightgreen;
+}

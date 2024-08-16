@@ -1,0 +1,18 @@
+.box{
+  display: flex;
+  justify-content: stretch;
+  margin-bottom: 10px;
+}
+
+.box input{
+  flex-grow: 1;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+}
+
+.ok{
+  background-color: lightgrey;
+  cursor: default;  
+  box-sizing: border-box;
+}

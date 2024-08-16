@@ -1,0 +1,94 @@
+.app {
+  padding: 30px 0;
+}
+.header{
+  display: flex;
+  gap: 20px;
+}
+.logoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+
+  img {
+    display: block;
+  }
+}
+
+.userSelect {
+  font-style: italic;
+  font-family: cursive;
+}
+
+.userSelect:first-letter {
+  text-transform: capitalize
+}
+
+.tLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usersBlock{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  font-size: 1.5em;
+}
+
+.ok {
+  background-color: lightgrey;
+  cursor: default;
+}
+
+.userItem {
+  position: relative;
+}
+
+.userItem button {
+  padding-right: 1em;
+}
+
+.del {
+  position: absolute;
+  top: -3px;
+  right: 3px;
+  color: red;
+  cursor: pointer;
+}
+
+.del::after {
+  content: 'удалить';
+  font-size: .5em;
+  position: absolute;
+  bottom: -0.6em;
+  right: -6em;
+  background-color: lightblue;
+  padding: 0 7px;
+  border-radius: 7px;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.del:hover::after {
+  opacity: 1;
+}
