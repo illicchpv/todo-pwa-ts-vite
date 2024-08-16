@@ -36,10 +36,20 @@ const vitePWA = VitePWA({
       // favicon-16x16.png favicon-32x32.png mstile-150x150.png 
       // apple-touch-icon.png favicon.ico 
     ],
+    "screenshots": [
+      {
+
+        "src": "./img/screen-840x550.png",
+        "sizes": "840x550",
+        "type": "image/png",
+        "form_factor": "wide",
+        "label": "Application"
+      },
+    ],
   },
   workbox: {
     globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg,woff,woff2,txt}'],
-  },  
+  },
 });
 
 
