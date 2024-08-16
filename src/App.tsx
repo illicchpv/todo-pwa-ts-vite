@@ -25,7 +25,7 @@ export function Login() {
       let usersNew = getItem()
       if (!usersNew) usersNew = []
       if (JSON.stringify(users) !== JSON.stringify(usersNew)) setUsers(usersNew)
-      console.log('useEffect(users: ', users);
+      // console.log('useEffect(users: ', users);
     } else {
       console.log('logged name: ', name);
       const myTodos = getItemU()

@@ -1,5 +1,6 @@
 export function b64EncodeUnicode(str: string): string {
   return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (match, p1) {
+    console.log('match: ', match);
     return String.fromCharCode(parseInt(p1, 16))
   }))
 }

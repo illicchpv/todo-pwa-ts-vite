@@ -58,3 +58,52 @@ npm i -D sass sass-loader
 https://favicon.io/favicon-converter/
 	Favicon Generator
 
+npm install -D vite-plugin-pwa
+
+// vite.config.ts
+  import {VitePWA} from 'vite-plugin-pwa';
+  const vitePWA = VitePWA({
+    registerType: 'autoUpdate',
+  });
+  // plugins + vitePWA
+
+>build
+sw.js
+  precacheAndRoute
+
+https for localhost  
+https://www.npmjs.com/package/https-localhost
+  ...dist>serve
+  https://localhost
+
+// vite.config.ts
+  manifest icons
+
+  workbox 
+    globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg,woff,woff2,txt}'],
+
+пример описания динамического кэширования:
+    runtimeCaching: [
+      {
+        urlPattern: /^https:\/\/cup-time-api-q31j.onrender.com\/api/,
+        handler: 'StaleWhileRevalidate',
+        options: {
+          cacheName: "api-cache",
+          cacheableResponse: {
+            statuses: [0, 200]
+          },
+        },
+      },
+      {
+        urlPattern: /^https:\/\/cup-time-api-q31j.onrender.com\/images/,
+        handler: 'StaleWhileRevalidate',
+        options: {
+          cacheName: "img-cache",
+          cacheableResponse: {
+            statuses: [0, 200]
+          },
+        },
+      },
+    ],
+
+'CacheFirst' | 'CacheOnly' | 'NetworkFirst' | 'NetworkOnly' | 'StaleWhileRevalidate' ...
