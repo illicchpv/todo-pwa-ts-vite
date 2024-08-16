@@ -31,7 +31,6 @@ const vitePWA = VitePWA({
         "src": "./favicons/android-chrome-512x512.png",
         "sizes": "512x512",
         "type": "image/png",
-        "purpose": "any maskable"
       },
       // favicon-16x16.png favicon-32x32.png mstile-150x150.png 
       // apple-touch-icon.png favicon.ico 
@@ -43,7 +42,6 @@ const vitePWA = VitePWA({
         "sizes": "840x550",
         "type": "image/png",
         "form_factor": "wide",
-        "label": "Application"
       },
     ],
   },
