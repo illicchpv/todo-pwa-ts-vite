@@ -14,7 +14,7 @@ const vitePWA = VitePWA({
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "lang": "ru",
-    "start_url": "/",
+    "start_url": "/todo-pwa-ts-vite",
     "scope": "/",
     icons: [
       {
@@ -44,15 +44,15 @@ const vitePWA = VitePWA({
         "form_factor": "wide",
       },
     ],
-    "shortcuts": [
-      {
-        "name": "To do list",
-        "short_name": "ToDo",
-        "description": "Список дел",
-        "url": "/todo-pwa-ts-vite",
-        // "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
-      },
-    ],    
+    // "shortcuts": [
+    //   {
+    //     "name": "To do list",
+    //     "short_name": "ToDo",
+    //     "description": "Список дел",
+    //     "url": "/todo-pwa-ts-vite",
+    //     // "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    //   },
+    // ],    
   },
   workbox: {
     globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg,woff,woff2,txt}'],
