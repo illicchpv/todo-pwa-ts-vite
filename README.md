@@ -107,3 +107,7 @@ https://www.npmjs.com/package/https-localhost
     ],
 
 'CacheFirst' | 'CacheOnly' | 'NetworkFirst' | 'NetworkOnly' | 'StaleWhileRevalidate' ...
+
+
+публикуем папку dist>
+  npm install gh-pages --save-dev
