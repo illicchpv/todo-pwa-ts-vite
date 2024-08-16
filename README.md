@@ -111,3 +111,13 @@ https://www.npmjs.com/package/https-localhost
 
 публикуем папку dist>
   npm install gh-pages --save-dev
+
+  package.json
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+
+github:
+https://github.com/illicchpv/todo-pwa-ts-vite
+
+deploy:
+https://illicchpv.github.io/todo-pwa-ts-vite/

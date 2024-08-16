@@ -56,7 +56,7 @@ export function Login() {
       console.log('myTodos: ', myTodos);
       dispatch(setStorFn({ storFn: setItemU }))
     }
-  }, [logged, dispatch, getItem, getItemU, name, setItemU]);
+  }, [logged, dispatch, getItem, getItemU, name, setItemU, users]);
 
   const handlerSubmit = (e: React.FormEvent<EventTarget>) => {
     e.preventDefault()
