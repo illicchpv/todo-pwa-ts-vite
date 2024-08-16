@@ -18,6 +18,11 @@ const vitePWA = VitePWA({
     "scope": "/",
     icons: [
       {
+        "src": "./favicons/android-chrome-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+      },
+      {
         "src": "./favicons/android-chrome-192x192.png",
         "sizes": "192x192",
         "type": "image/png",
